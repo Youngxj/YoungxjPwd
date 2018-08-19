@@ -194,7 +194,7 @@ if($_GET['action']=='sign_up'){
 				$set->table_name = 'pwd_plan';
 				$sql = $set->create(array('stime'=>$stime,'username'=>$username,'email'=>$email,'content'=>$content,'type'=>$type));
 				if($sql){
-					EchoMsg(200,'请求数据成功(注册)','','','1','',$username);
+					EchoMsg(200,'请求数据成功(注册)','','','2',$username);
 				}else{
 					EchoMsg(201,'请求数据失败(注册)');
 				}
